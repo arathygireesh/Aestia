@@ -1,0 +1,249 @@
+/* About Page Styles */
+.about-page {
+  min-height: 100vh;
+  background-color: var(--bg-color, #F7F4EE);
+  color: var(--text-color, #222222);
+}
+
+.about-main {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.about-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 60px;
+}
+
+.about-tag {
+  display: inline-block;
+  font-family: var(--font-sans, 'Plus Jakarta Sans', sans-serif);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted-green, #526B58);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.about-title {
+  font-family: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+  font-size: clamp(2.4rem, 5vw, 3.75rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: var(--text-color, #222222);
+  margin-bottom: 20px;
+}
+
+.about-intro {
+  font-family: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+  font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--muted-green, #526B58);
+  margin-bottom: 28px;
+  line-height: 1.4;
+}
+
+.about-story-lead p {
+  font-family: var(--font-sans, 'Plus Jakarta Sans', sans-serif);
+  font-size: clamp(0.95rem, 1.5vw, 1.08rem);
+  line-height: 1.85;
+  color: #4A4A4A;
+  font-weight: 400;
+}
+
+/* Hero Lifestyle Image */
+.about-hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-height: 580px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 90px;
+  box-shadow: 0 20px 45px rgba(34, 34, 34, 0.05);
+}
+
+.about-hero-image {
+  width: 100%;
+  height: 100%;
+  max-height: 580px;
+  object-fit: cover;
+  display: block;
+  transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.about-hero-image-wrapper:hover .about-hero-image {
+  transform: scale(1.02);
+}
+
+/* 3 Pillars Section Grid */
+.about-sections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 90px;
+}
+
+.about-section-card {
+  background-color: var(--white, #FFFFFF);
+  border: 1px solid rgba(82, 107, 88, 0.1);
+  border-radius: 10px;
+  padding: 40px 32px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(82, 107, 88, 0.28);
+  box-shadow: 0 14px 30px rgba(34, 34, 34, 0.04);
+}
+
+.about-card-number {
+  font-family: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--warm-beige, #C8A978);
+  margin-bottom: 12px;
+  letter-spacing: 0.1em;
+}
+
+.about-card-title {
+  font-family: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+  font-size: 1.45rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--text-color, #222222);
+  margin-bottom: 14px;
+}
+
+.about-card-divider {
+  width: 32px;
+  height: 2px;
+  background-color: var(--soft-green, #DDE5DA);
+  margin-bottom: 18px;
+  transition: width 0.35s ease, background-color 0.35s ease;
+}
+
+.about-section-card:hover .about-card-divider {
+  width: 48px;
+  background-color: var(--muted-green, #526B58);
+}
+
+.about-card-text {
+  font-family: var(--font-sans, 'Plus Jakarta Sans', sans-serif);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #555555;
+  margin-top: auto;
+}
+
+/* Contact CTA Banner */
+.about-contact-cta {
+  background-color: rgba(221, 229, 218, 0.45);
+  border: 1px solid rgba(82, 107, 88, 0.15);
+  border-radius: 12px;
+  padding: 56px 40px;
+  text-align: center;
+}
+
+.about-cta-content {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.about-cta-title {
+  font-family: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-color, #222222);
+  margin-bottom: 12px;
+}
+
+.about-cta-desc {
+  font-family: var(--font-sans, 'Plus Jakarta Sans', sans-serif);
+  font-size: 0.95rem;
+  color: #5A655D;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.about-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--muted-green, #526B58);
+  color: var(--white, #FFFFFF);
+  font-family: var(--font-sans, 'Plus Jakarta Sans', sans-serif);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  padding: 14px 32px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-cta-btn:hover {
+  background-color: #3f5445;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(82, 107, 88, 0.2);
+}
+
+.cta-arrow {
+  transition: transform 0.25s ease;
+}
+
+.about-cta-btn:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-sections-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-hero-image-wrapper {
+    margin-bottom: 60px;
+    max-height: 420px;
+  }
+
+  .about-main {
+    padding-top: 110px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    padding: 0 20px;
+  }
+
+  .about-header {
+    margin-bottom: 40px;
+  }
+
+  .about-hero-image-wrapper {
+    max-height: 300px;
+  }
+
+  .about-section-card {
+    padding: 30px 24px;
+  }
+
+  .about-contact-cta {
+    padding: 40px 20px;
+  }
+}
